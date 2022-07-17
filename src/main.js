@@ -1,12 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import './assets/css/tailwind.css'
+import './assets/scss/main.scss'
 
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faCircleArrowDown, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCircleArrowDown, faCircleArrowRight)
 
 const app = createApp(App)
 
-app.use(VueAxios, axios)
+app.component('font-awesome-icon', FontAwesomeIcon)
+
 app.mount('#app')

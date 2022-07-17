@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+@import 'utilities/variables';
+
+@import 'base/reset';
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    font-family: $open;
+    color: #fff;
+    background-color: $dark;
+    padding: 1.5rem;
+}
